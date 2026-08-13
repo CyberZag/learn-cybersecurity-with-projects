@@ -1,0 +1,24 @@
+```
+Purpose: Flag VPN logins from a new/unusual geographic location for a user
+within a short time window of their last known-good login (impossible
+travel / anomalous VPN access).
+
+Data source: index=vpn sourcetype=vpn:auth (adjust to your TA/sourcetype)
+
+False positive notes: Corporate VPN exit nodes shared across regions,
+users legitimately traveling, mobile carrier IP reassignment.
+
+Response action: Triage against user travel/ticket history; if unconfirmed,
+escalate for password reset + MFA re-enrollment review.
+```
+
+index=vpn sourcetype=vpn:auth action=success
+| iplocation src_ip
+| stats earliest(_time) as first_seen latest(_time) as last_seen
+        values(Country) as countries values(src_ip) as ips
+        by user
+| where mvcount(countries) > 1
+| eval time_between_logins_min = (last_seen - first_seen) / 60
+| where time_between_logins_min < 240
+| table user countries ips first_seen last_seen time_between_logins_min
+| sort - time_between_logins_min

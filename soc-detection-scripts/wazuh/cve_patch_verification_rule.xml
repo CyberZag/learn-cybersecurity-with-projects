@@ -1,0 +1,24 @@
+<!--
+  Purpose: Alert when vulnerability-detector reports a host still exposed to
+  a CVE that should have been remediated by a tracked patch cycle.
+
+  Data source: Wazuh vulnerability-detector module output.
+
+  False positive notes: Package version strings that don't match the
+  vendor's fixed-version format; verify with vendor advisory before closing.
+
+  Response action: Cross-check host against patch management ticket; if
+  patch was reportedly applied but CVE still flags, investigate patch
+  deployment failure.
+-->
+<group name="vulnerability-detector,cve_tracking,">
+
+  <rule id="100200" level="10">
+    <if_group>vulnerability-detector</if_group>
+    <match>CVE-</match>
+    <description>Host still vulnerable to a tracked CVE after expected patch window</description>
+    <options>no_full_log</options>
+    <group>cve_tracking</group>
+  </rule>
+
+</group>
