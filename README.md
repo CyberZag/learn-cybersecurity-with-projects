@@ -1,32 +1,15 @@
 # Learn Cybersecurity with Projects
 
-A personal cybersecurity portfolio and lab notebook — practical writeups, SOC detection content, and small security tools built while learning and working in security operations.
+A small collection of original, defensive learning artifacts: a Python log parser and two detection-rule examples.
 
-## Structure
+## Published content
 
-```
-.
-├── htb-tryhackme-writeups/   # HackTheBox & TryHackMe box/room writeups
-├── soc-detection-scripts/    # Splunk / Wazuh queries, detection logic, IR playbooks
-│   ├── splunk/
-│   └── wazuh/
-└── security-tools/           # Small scripts and utilities (log parsers, CyberChef-style recipes, etc.)
-```
+- [`security-tools/log_parser.py`](security-tools/log_parser.py) — extracts IPv4 addresses, usernames, and timestamps from a local plaintext log for quick triage.
+- [`soc-detection-scripts/splunk/vpn_login_anomaly.spl`](soc-detection-scripts/splunk/vpn_login_anomaly.spl) — a Splunk search template for reviewing unusual VPN access.
+- [`soc-detection-scripts/wazuh/cve_patch_verification_rule.xml`](soc-detection-scripts/wazuh/cve_patch_verification_rule.xml) — a Wazuh rule example for patch-verification workflows.
 
-## About
-
-This repo tracks hands-on cybersecurity work across three areas:
-
-- **Writeups** — methodology, tools, and key takeaways from HackTheBox and TryHackMe challenges.
-- **SOC / detection content** — Splunk and Wazuh detection rules, alert triage notes, and incident response playbooks drawn from real SOC practices (VPN login anomalies, CVE patching workflows, EDR alert triage, etc.).
-- **Tools** — small Python/CLI utilities for log parsing, packet analysis, and data transformation.
-
-Each subfolder has its own README with a template to keep entries consistent.
-
-## Status
-
-🚧 Actively growing — new writeups, detections, and tools get added as they're completed.
+These are learning examples, not production detections. Validate field names, thresholds, permissions, and response procedures in an authorized environment before use.
 
 ## License
 
-MIT — see [LICENSE](./LICENSE).
+MIT — see [LICENSE](LICENSE).
