@@ -10,6 +10,14 @@ A small collection of original, defensive learning artifacts: a Python log parse
 
 These are learning examples, not production detections. Validate field names, thresholds, permissions, and response procedures in an authorized environment before use.
 
+## Asset lifecycle practice
+
+- [Asset Lifecycle and Support Ticket Lab](labs/asset-lifecycle/README.md): offline Python exercises connecting inventory records, approval checks, support tickets and leaver follow-up, with synthetic data and ten automated tests.
+- [Runbook](labs/asset-lifecycle/RUNBOOK.md) and [learner evidence template](labs/asset-lifecycle/LEARNER_EVIDENCE.md) support practice and a clear explanation of decisions.
+
+This new lab is an AI-assisted learning resource. Its published test results were produced by the assistant; they do not establish personal completion or production experience.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
+

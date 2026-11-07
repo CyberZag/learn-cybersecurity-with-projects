@@ -1,0 +1,375 @@
+{
+  "synthetic": true,
+  "description": "Fictional lab only; no real employer data",
+  "users": [
+    {
+      "user_id": "U-001",
+      "display_name": "Synthetic Person 01",
+      "status": "active"
+    },
+    {
+      "user_id": "U-002",
+      "display_name": "Synthetic Person 02",
+      "status": "active"
+    },
+    {
+      "user_id": "U-003",
+      "display_name": "Synthetic Person 03",
+      "status": "leaver"
+    },
+    {
+      "user_id": "U-004",
+      "display_name": "Synthetic Person 04",
+      "status": "active"
+    },
+    {
+      "user_id": "U-005",
+      "display_name": "Synthetic Person 05",
+      "status": "active"
+    },
+    {
+      "user_id": "U-006",
+      "display_name": "Synthetic Person 06",
+      "status": "active"
+    },
+    {
+      "user_id": "U-007",
+      "display_name": "Synthetic Person 07",
+      "status": "active"
+    },
+    {
+      "user_id": "U-008",
+      "display_name": "Synthetic Person 08",
+      "status": "active"
+    },
+    {
+      "user_id": "U-009",
+      "display_name": "Synthetic Person 09",
+      "status": "active"
+    },
+    {
+      "user_id": "U-010",
+      "display_name": "Synthetic Person 10",
+      "status": "active"
+    },
+    {
+      "user_id": "U-011",
+      "display_name": "Synthetic Person 11",
+      "status": "active"
+    },
+    {
+      "user_id": "U-012",
+      "display_name": "Synthetic Person 12",
+      "status": "active"
+    },
+    {
+      "user_id": "U-013",
+      "display_name": "Synthetic Person 13",
+      "status": "active"
+    },
+    {
+      "user_id": "U-014",
+      "display_name": "Synthetic Person 14",
+      "status": "active"
+    },
+    {
+      "user_id": "U-015",
+      "display_name": "Synthetic Person 15",
+      "status": "active"
+    },
+    {
+      "user_id": "U-016",
+      "display_name": "Synthetic Person 16",
+      "status": "active"
+    },
+    {
+      "user_id": "U-017",
+      "display_name": "Synthetic Person 17",
+      "status": "active"
+    },
+    {
+      "user_id": "U-018",
+      "display_name": "Synthetic Person 18",
+      "status": "active"
+    },
+    {
+      "user_id": "U-019",
+      "display_name": "Synthetic Person 19",
+      "status": "active"
+    },
+    {
+      "user_id": "U-020",
+      "display_name": "Synthetic Person 20",
+      "status": "active"
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "CI-001",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-001",
+      "status": "storage",
+      "assigned_to": null,
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    },
+    {
+      "asset_id": "CI-002",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-002",
+      "status": "active",
+      "assigned_to": "U-002",
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    },
+    {
+      "asset_id": "CI-003",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-003",
+      "status": "active",
+      "assigned_to": "U-003",
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    },
+    {
+      "asset_id": "CI-004",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-004",
+      "status": "storage",
+      "assigned_to": null,
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    },
+    {
+      "asset_id": "CI-005",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-005",
+      "status": "active",
+      "assigned_to": "U-005",
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    },
+    {
+      "asset_id": "CI-006",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-006",
+      "status": "active",
+      "assigned_to": "U-006",
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    },
+    {
+      "asset_id": "CI-007",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-007",
+      "status": "active",
+      "assigned_to": "U-007",
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    },
+    {
+      "asset_id": "CI-008",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-008",
+      "status": "active",
+      "assigned_to": "U-008",
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    },
+    {
+      "asset_id": "CI-009",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-009",
+      "status": "active",
+      "assigned_to": "U-009",
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    },
+    {
+      "asset_id": "CI-010",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-010",
+      "status": "active",
+      "assigned_to": "U-010",
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    },
+    {
+      "asset_id": "CI-011",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-011",
+      "status": "active",
+      "assigned_to": "U-011",
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    },
+    {
+      "asset_id": "CI-012",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-012",
+      "status": "active",
+      "assigned_to": "U-012",
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    },
+    {
+      "asset_id": "CI-013",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-013",
+      "status": "active",
+      "assigned_to": "U-013",
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    },
+    {
+      "asset_id": "CI-014",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-014",
+      "status": "active",
+      "assigned_to": "U-014",
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    },
+    {
+      "asset_id": "CI-015",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-015",
+      "status": "active",
+      "assigned_to": "U-015",
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    },
+    {
+      "asset_id": "CI-016",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-016",
+      "status": "active",
+      "assigned_to": "U-016",
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    },
+    {
+      "asset_id": "CI-017",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-017",
+      "status": "active",
+      "assigned_to": "U-017",
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    },
+    {
+      "asset_id": "CI-018",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-018",
+      "status": "active",
+      "assigned_to": "U-018",
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    },
+    {
+      "asset_id": "CI-019",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-019",
+      "status": "active",
+      "assigned_to": "U-019",
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    },
+    {
+      "asset_id": "CI-020",
+      "type": "laptop",
+      "model": "Synthetic Laptop",
+      "serial": "EXAMPLE-ONLY-020",
+      "status": "active",
+      "assigned_to": "U-020",
+      "location": "Fictional Office A",
+      "last_updated": "2026-11-05T15:00:00Z"
+    }
+  ],
+  "tickets": [
+    {
+      "ticket_id": "T-001",
+      "asset_id": "CI-001",
+      "operation": "deploy",
+      "requested_by": "U-001",
+      "approved_by": "U-020",
+      "to_user": "U-002",
+      "status": "open",
+      "expected_status": "storage",
+      "expected_assignee": null,
+      "evidence": "SYNTHETIC request record EXAMPLE-001",
+      "sanitization_evidence": null
+    },
+    {
+      "ticket_id": "T-002",
+      "asset_id": "CI-002",
+      "operation": "transfer",
+      "requested_by": "U-001",
+      "approved_by": null,
+      "to_user": "U-004",
+      "status": "open",
+      "expected_status": "active",
+      "expected_assignee": "U-002",
+      "evidence": "SYNTHETIC request record EXAMPLE-002",
+      "sanitization_evidence": null
+    },
+    {
+      "ticket_id": "T-003",
+      "asset_id": "CI-003",
+      "operation": "reclaim",
+      "requested_by": "U-001",
+      "approved_by": "U-020",
+      "to_user": null,
+      "status": "open",
+      "expected_status": "active",
+      "expected_assignee": "U-003",
+      "evidence": "SYNTHETIC request record EXAMPLE-003",
+      "sanitization_evidence": null
+    },
+    {
+      "ticket_id": "T-004",
+      "asset_id": "CI-004",
+      "operation": "retire",
+      "requested_by": "U-001",
+      "approved_by": "U-020",
+      "to_user": null,
+      "status": "open",
+      "expected_status": "storage",
+      "expected_assignee": null,
+      "evidence": "SYNTHETIC request record EXAMPLE-004",
+      "sanitization_evidence": null
+    },
+    {
+      "ticket_id": "T-005",
+      "asset_id": "CI-005",
+      "operation": "transfer",
+      "requested_by": "U-001",
+      "approved_by": "U-020",
+      "to_user": "U-003",
+      "status": "open",
+      "expected_status": "active",
+      "expected_assignee": "U-005",
+      "evidence": "SYNTHETIC request record EXAMPLE-005",
+      "sanitization_evidence": null
+    }
+  ]
+}

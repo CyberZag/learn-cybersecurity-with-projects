@@ -1,0 +1,154 @@
+{
+  "provenance": "AI-assisted demo; assistant run is not learner completion",
+  "synthetic": true,
+  "findings_before": [
+    {
+      "code": "ASSET_ASSIGNED_TO_LEAVER",
+      "asset_id": "CI-003",
+      "user_id": "U-003",
+      "action": "Verify departure and coordinate approved asset recovery; review access separately."
+    }
+  ],
+  "findings_after": [],
+  "asset_counts": {
+    "active": 18,
+    "repair": 1,
+    "storage": 1
+  },
+  "audit": [
+    {
+      "ticket_id": "T-001",
+      "decision": "applied_in_simulation",
+      "operation": "deploy",
+      "time_utc": "2026-11-06T15:00:00Z",
+      "approver": "U-020",
+      "evidence": "SYNTHETIC request record EXAMPLE-001",
+      "before": {
+        "asset_id": "CI-001",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-001",
+        "status": "storage",
+        "assigned_to": null,
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-05T15:00:00Z"
+      },
+      "after": {
+        "asset_id": "CI-001",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-001",
+        "status": "active",
+        "assigned_to": "U-002",
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-06T15:00:00Z"
+      }
+    },
+    {
+      "ticket_id": "T-002",
+      "decision": "blocked",
+      "reason": "Active approver and known requester required",
+      "time_utc": "2026-11-06T15:00:00Z",
+      "before": {
+        "asset_id": "CI-002",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-002",
+        "status": "active",
+        "assigned_to": "U-002",
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-05T15:00:00Z"
+      },
+      "after": {
+        "asset_id": "CI-002",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-002",
+        "status": "active",
+        "assigned_to": "U-002",
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-05T15:00:00Z"
+      }
+    },
+    {
+      "ticket_id": "T-003",
+      "decision": "applied_in_simulation",
+      "operation": "reclaim",
+      "time_utc": "2026-11-06T15:00:00Z",
+      "approver": "U-020",
+      "evidence": "SYNTHETIC request record EXAMPLE-003",
+      "before": {
+        "asset_id": "CI-003",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-003",
+        "status": "active",
+        "assigned_to": "U-003",
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-05T15:00:00Z"
+      },
+      "after": {
+        "asset_id": "CI-003",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-003",
+        "status": "repair",
+        "assigned_to": null,
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-06T15:00:00Z"
+      }
+    },
+    {
+      "ticket_id": "T-004",
+      "decision": "blocked",
+      "reason": "Sanitization and disposal evidence required; no wipe is performed by this demo",
+      "time_utc": "2026-11-06T15:00:00Z",
+      "before": {
+        "asset_id": "CI-004",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-004",
+        "status": "storage",
+        "assigned_to": null,
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-05T15:00:00Z"
+      },
+      "after": {
+        "asset_id": "CI-004",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-004",
+        "status": "storage",
+        "assigned_to": null,
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-05T15:00:00Z"
+      }
+    },
+    {
+      "ticket_id": "T-005",
+      "decision": "blocked",
+      "reason": "Deployment or transfer requires an active recipient",
+      "time_utc": "2026-11-06T15:00:00Z",
+      "before": {
+        "asset_id": "CI-005",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-005",
+        "status": "active",
+        "assigned_to": "U-005",
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-05T15:00:00Z"
+      },
+      "after": {
+        "asset_id": "CI-005",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-005",
+        "status": "active",
+        "assigned_to": "U-005",
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-05T15:00:00Z"
+      }
+    }
+  ]
+}
