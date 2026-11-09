@@ -1,0 +1,165 @@
+{
+  "synthetic": true,
+  "provenance": "Assistant-authored and tested. Personal learner completion is not claimed.",
+  "counts": {
+    "Simulated change complete": 2,
+    "Held for review": 3
+  },
+  "tickets": [
+    {
+      "ticket_id": "T-001",
+      "asset_id": "CI-001",
+      "operation": "deploy",
+      "status": "Simulated change complete",
+      "reason": "Approval and current-state checks passed in the simulation",
+      "next_action": "Review the before/after evidence and confirm the requested outcome. Account-access review is separate.",
+      "customer_update_draft": "The approved inventory change has completed in this simulation. Please review the recorded outcome. This does not confirm any real device action or account-access change.",
+      "priority": "Unassigned: business impact and urgency require review",
+      "follow_up": "Agree a follow-up time; no service-level promise is assumed",
+      "before": {
+        "asset_id": "CI-001",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-001",
+        "status": "storage",
+        "assigned_to": null,
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-05T15:00:00Z"
+      },
+      "after": {
+        "asset_id": "CI-001",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-001",
+        "status": "active",
+        "assigned_to": "U-002",
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-06T15:00:00Z"
+      }
+    },
+    {
+      "ticket_id": "T-002",
+      "asset_id": "CI-002",
+      "operation": "transfer",
+      "status": "Held for review",
+      "reason": "Active approver and known requester required",
+      "next_action": "The assigned support analyst should resolve the stated blocker with the appropriate approver or record owner, then reassess.",
+      "customer_update_draft": "Your request is awaiting review. No inventory change has been applied for this request. The next step is to resolve the documented approval or record-state blocker before proceeding.",
+      "priority": "Unassigned: business impact and urgency require review",
+      "follow_up": "Agree a follow-up time; no service-level promise is assumed",
+      "before": {
+        "asset_id": "CI-002",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-002",
+        "status": "active",
+        "assigned_to": "U-002",
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-05T15:00:00Z"
+      },
+      "after": {
+        "asset_id": "CI-002",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-002",
+        "status": "active",
+        "assigned_to": "U-002",
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-05T15:00:00Z"
+      }
+    },
+    {
+      "ticket_id": "T-003",
+      "asset_id": "CI-003",
+      "operation": "reclaim",
+      "status": "Simulated change complete",
+      "reason": "Approval and current-state checks passed in the simulation",
+      "next_action": "Review the before/after evidence and confirm the requested outcome. Account-access review is separate.",
+      "customer_update_draft": "The approved inventory change has completed in this simulation. Please review the recorded outcome. This does not confirm any real device action or account-access change.",
+      "priority": "Unassigned: business impact and urgency require review",
+      "follow_up": "Agree a follow-up time; no service-level promise is assumed",
+      "before": {
+        "asset_id": "CI-003",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-003",
+        "status": "active",
+        "assigned_to": "U-003",
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-05T15:00:00Z"
+      },
+      "after": {
+        "asset_id": "CI-003",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-003",
+        "status": "repair",
+        "assigned_to": null,
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-06T15:00:00Z"
+      }
+    },
+    {
+      "ticket_id": "T-004",
+      "asset_id": "CI-004",
+      "operation": "retire",
+      "status": "Held for review",
+      "reason": "Sanitization and disposal evidence required; no wipe is performed by this demo",
+      "next_action": "The assigned support analyst should resolve the stated blocker with the appropriate approver or record owner, then reassess.",
+      "customer_update_draft": "Your request is awaiting review. No inventory change has been applied for this request. The next step is to resolve the documented approval or record-state blocker before proceeding.",
+      "priority": "Unassigned: business impact and urgency require review",
+      "follow_up": "Agree a follow-up time; no service-level promise is assumed",
+      "before": {
+        "asset_id": "CI-004",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-004",
+        "status": "storage",
+        "assigned_to": null,
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-05T15:00:00Z"
+      },
+      "after": {
+        "asset_id": "CI-004",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-004",
+        "status": "storage",
+        "assigned_to": null,
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-05T15:00:00Z"
+      }
+    },
+    {
+      "ticket_id": "T-005",
+      "asset_id": "CI-005",
+      "operation": "transfer",
+      "status": "Held for review",
+      "reason": "Deployment or transfer requires an active recipient",
+      "next_action": "The assigned support analyst should resolve the stated blocker with the appropriate approver or record owner, then reassess.",
+      "customer_update_draft": "Your request is awaiting review. No inventory change has been applied for this request. The next step is to resolve the documented approval or record-state blocker before proceeding.",
+      "priority": "Unassigned: business impact and urgency require review",
+      "follow_up": "Agree a follow-up time; no service-level promise is assumed",
+      "before": {
+        "asset_id": "CI-005",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-005",
+        "status": "active",
+        "assigned_to": "U-005",
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-05T15:00:00Z"
+      },
+      "after": {
+        "asset_id": "CI-005",
+        "type": "laptop",
+        "model": "Synthetic Laptop",
+        "serial": "EXAMPLE-ONLY-005",
+        "status": "active",
+        "assigned_to": "U-005",
+        "location": "Fictional Office A",
+        "last_updated": "2026-11-05T15:00:00Z"
+      }
+    }
+  ]
+}

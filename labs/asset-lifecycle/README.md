@@ -56,6 +56,17 @@ flowchart LR
 
 The learner record starts blank. Only describe activities you actually performed in a resume or interview.
 
+
+## Support handoff view
+
+The [support handoff extension](SUPPORT_PORTAL.md) renders the same five requests as an offline HTML review page with decision evidence, next actions and unsent customer-update drafts. It deliberately leaves priority and response-time commitments unset when supporting facts are missing.
+
+```sh
+python support_portal.py
+```
+
+Open the generated `support_runs/.../index.html` locally. Six new tests plus the ten existing tests passed in the assistant's November 9 run. See [support verification notes](examples/support/VERIFICATION.md). Browser visual preview was blocked by the tool's local-file URL policy; the HTML structure and escaping were checked automatically, but no visual-review claim is made.
+
 ## Limits and provenance
 
 This is a small inventory simulation, not an enterprise CMDB, identity system or BMC/Intune integration. Approval strings are fictional inputs, not authenticated approval. The JSON audit is editable. The event timestamp is fixed for the scenario; the output folder records the actual run time. No device is wiped and no access is revoked.

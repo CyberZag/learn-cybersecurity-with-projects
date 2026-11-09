@@ -1,0 +1,145 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Synthetic support handoff</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f3f6fa;color:#173144;font:17px/1.55 system-ui,sans-serif}
+main{max-width:1000px;margin:auto;padding:32px 22px}h1{font-size:2.2rem;line-height:1.15;margin:12px 0}
+.notice{border-left:5px solid #9a5700;background:#fff1d6;padding:14px 18px}
+.metrics{display:flex;flex-wrap:wrap;gap:14px;margin:24px 0}.metrics p{background:#173144;color:white;border-radius:8px;padding:14px 20px;margin:0}
+article{background:white;border:1px solid #cbd5df;border-radius:10px;padding:24px;margin:22px 0}
+article header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}h2{margin:0;font-size:1.35rem}
+h3{font-size:1rem}.status{border:1px solid #61768a;padding:5px 10px;border-radius:5px;font-size:.9rem}
+dt{font-weight:700;margin-top:14px}dd{margin:3px 0 10px}blockquote{margin:8px 0;padding:14px 18px;background:#edf3f8;border-left:4px solid #35627c}
+summary{cursor:pointer;font-weight:650}summary:focus-visible,a:focus-visible{outline:3px solid #005b9f;outline-offset:3px}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f4f6f8;padding:12px;font-size:.85rem}footer{margin-top:30px;font-size:.95rem}
+@media(max-width:550px){main{padding:20px 12px}article{padding:16px}h1{font-size:1.8rem}}
+</style></head><body><main><p>OFFLINE LEARNING LAB</p><h1>Support handoff: evidence before action</h1>
+<div class="notice"><strong>Synthetic demonstration.</strong> Assistant-authored and tested; not personal learner completion.
+No real tickets or messages are sent. No employer affiliation, live system status or response-time promise is implied.</div>
+<section aria-label="Example outcomes" class="metrics"><p>5 fictional requests</p>
+<p>2 simulated changes complete</p><p>3 held for review</p></section>
+<p>Each case uses the existing asset-lifecycle simulator. Read the reason, identify who needs to act next, and compare the evidence before drafting a customer response.</p>
+<article aria-labelledby="ticket-1">
+<header><h2 id="ticket-1">T-001 / CI-001</h2>
+<span class="status">Simulated change complete</span></header>
+<p>Requested operation: <strong>deploy</strong></p><dl><dt>Decision evidence</dt><dd>Approval and current-state checks passed in the simulation</dd><dt>Next action</dt><dd>Review the before/after evidence and confirm the requested outcome. Account-access review is separate.</dd><dt>Priority</dt><dd>Unassigned: business impact and urgency require review</dd><dt>Follow-up</dt><dd>Agree a follow-up time; no service-level promise is assumed</dd></dl>
+<h3>Customer update draft - not sent</h3><blockquote>The approved inventory change has completed in this simulation. Please review the recorded outcome. This does not confirm any real device action or account-access change.</blockquote>
+<details><summary>Inspect simulated before and after</summary>
+<h3>Before</h3><pre>{
+  &quot;asset_id&quot;: &quot;CI-001&quot;,
+  &quot;type&quot;: &quot;laptop&quot;,
+  &quot;model&quot;: &quot;Synthetic Laptop&quot;,
+  &quot;serial&quot;: &quot;EXAMPLE-ONLY-001&quot;,
+  &quot;status&quot;: &quot;storage&quot;,
+  &quot;assigned_to&quot;: null,
+  &quot;location&quot;: &quot;Fictional Office A&quot;,
+  &quot;last_updated&quot;: &quot;2026-11-05T15:00:00Z&quot;
+}</pre><h3>After</h3><pre>{
+  &quot;asset_id&quot;: &quot;CI-001&quot;,
+  &quot;type&quot;: &quot;laptop&quot;,
+  &quot;model&quot;: &quot;Synthetic Laptop&quot;,
+  &quot;serial&quot;: &quot;EXAMPLE-ONLY-001&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;assigned_to&quot;: &quot;U-002&quot;,
+  &quot;location&quot;: &quot;Fictional Office A&quot;,
+  &quot;last_updated&quot;: &quot;2026-11-06T15:00:00Z&quot;
+}</pre></details></article><article aria-labelledby="ticket-2">
+<header><h2 id="ticket-2">T-002 / CI-002</h2>
+<span class="status">Held for review</span></header>
+<p>Requested operation: <strong>transfer</strong></p><dl><dt>Decision evidence</dt><dd>Active approver and known requester required</dd><dt>Next action</dt><dd>The assigned support analyst should resolve the stated blocker with the appropriate approver or record owner, then reassess.</dd><dt>Priority</dt><dd>Unassigned: business impact and urgency require review</dd><dt>Follow-up</dt><dd>Agree a follow-up time; no service-level promise is assumed</dd></dl>
+<h3>Customer update draft - not sent</h3><blockquote>Your request is awaiting review. No inventory change has been applied for this request. The next step is to resolve the documented approval or record-state blocker before proceeding.</blockquote>
+<details><summary>Inspect simulated before and after</summary>
+<h3>Before</h3><pre>{
+  &quot;asset_id&quot;: &quot;CI-002&quot;,
+  &quot;type&quot;: &quot;laptop&quot;,
+  &quot;model&quot;: &quot;Synthetic Laptop&quot;,
+  &quot;serial&quot;: &quot;EXAMPLE-ONLY-002&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;assigned_to&quot;: &quot;U-002&quot;,
+  &quot;location&quot;: &quot;Fictional Office A&quot;,
+  &quot;last_updated&quot;: &quot;2026-11-05T15:00:00Z&quot;
+}</pre><h3>After</h3><pre>{
+  &quot;asset_id&quot;: &quot;CI-002&quot;,
+  &quot;type&quot;: &quot;laptop&quot;,
+  &quot;model&quot;: &quot;Synthetic Laptop&quot;,
+  &quot;serial&quot;: &quot;EXAMPLE-ONLY-002&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;assigned_to&quot;: &quot;U-002&quot;,
+  &quot;location&quot;: &quot;Fictional Office A&quot;,
+  &quot;last_updated&quot;: &quot;2026-11-05T15:00:00Z&quot;
+}</pre></details></article><article aria-labelledby="ticket-3">
+<header><h2 id="ticket-3">T-003 / CI-003</h2>
+<span class="status">Simulated change complete</span></header>
+<p>Requested operation: <strong>reclaim</strong></p><dl><dt>Decision evidence</dt><dd>Approval and current-state checks passed in the simulation</dd><dt>Next action</dt><dd>Review the before/after evidence and confirm the requested outcome. Account-access review is separate.</dd><dt>Priority</dt><dd>Unassigned: business impact and urgency require review</dd><dt>Follow-up</dt><dd>Agree a follow-up time; no service-level promise is assumed</dd></dl>
+<h3>Customer update draft - not sent</h3><blockquote>The approved inventory change has completed in this simulation. Please review the recorded outcome. This does not confirm any real device action or account-access change.</blockquote>
+<details><summary>Inspect simulated before and after</summary>
+<h3>Before</h3><pre>{
+  &quot;asset_id&quot;: &quot;CI-003&quot;,
+  &quot;type&quot;: &quot;laptop&quot;,
+  &quot;model&quot;: &quot;Synthetic Laptop&quot;,
+  &quot;serial&quot;: &quot;EXAMPLE-ONLY-003&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;assigned_to&quot;: &quot;U-003&quot;,
+  &quot;location&quot;: &quot;Fictional Office A&quot;,
+  &quot;last_updated&quot;: &quot;2026-11-05T15:00:00Z&quot;
+}</pre><h3>After</h3><pre>{
+  &quot;asset_id&quot;: &quot;CI-003&quot;,
+  &quot;type&quot;: &quot;laptop&quot;,
+  &quot;model&quot;: &quot;Synthetic Laptop&quot;,
+  &quot;serial&quot;: &quot;EXAMPLE-ONLY-003&quot;,
+  &quot;status&quot;: &quot;repair&quot;,
+  &quot;assigned_to&quot;: null,
+  &quot;location&quot;: &quot;Fictional Office A&quot;,
+  &quot;last_updated&quot;: &quot;2026-11-06T15:00:00Z&quot;
+}</pre></details></article><article aria-labelledby="ticket-4">
+<header><h2 id="ticket-4">T-004 / CI-004</h2>
+<span class="status">Held for review</span></header>
+<p>Requested operation: <strong>retire</strong></p><dl><dt>Decision evidence</dt><dd>Sanitization and disposal evidence required; no wipe is performed by this demo</dd><dt>Next action</dt><dd>The assigned support analyst should resolve the stated blocker with the appropriate approver or record owner, then reassess.</dd><dt>Priority</dt><dd>Unassigned: business impact and urgency require review</dd><dt>Follow-up</dt><dd>Agree a follow-up time; no service-level promise is assumed</dd></dl>
+<h3>Customer update draft - not sent</h3><blockquote>Your request is awaiting review. No inventory change has been applied for this request. The next step is to resolve the documented approval or record-state blocker before proceeding.</blockquote>
+<details><summary>Inspect simulated before and after</summary>
+<h3>Before</h3><pre>{
+  &quot;asset_id&quot;: &quot;CI-004&quot;,
+  &quot;type&quot;: &quot;laptop&quot;,
+  &quot;model&quot;: &quot;Synthetic Laptop&quot;,
+  &quot;serial&quot;: &quot;EXAMPLE-ONLY-004&quot;,
+  &quot;status&quot;: &quot;storage&quot;,
+  &quot;assigned_to&quot;: null,
+  &quot;location&quot;: &quot;Fictional Office A&quot;,
+  &quot;last_updated&quot;: &quot;2026-11-05T15:00:00Z&quot;
+}</pre><h3>After</h3><pre>{
+  &quot;asset_id&quot;: &quot;CI-004&quot;,
+  &quot;type&quot;: &quot;laptop&quot;,
+  &quot;model&quot;: &quot;Synthetic Laptop&quot;,
+  &quot;serial&quot;: &quot;EXAMPLE-ONLY-004&quot;,
+  &quot;status&quot;: &quot;storage&quot;,
+  &quot;assigned_to&quot;: null,
+  &quot;location&quot;: &quot;Fictional Office A&quot;,
+  &quot;last_updated&quot;: &quot;2026-11-05T15:00:00Z&quot;
+}</pre></details></article><article aria-labelledby="ticket-5">
+<header><h2 id="ticket-5">T-005 / CI-005</h2>
+<span class="status">Held for review</span></header>
+<p>Requested operation: <strong>transfer</strong></p><dl><dt>Decision evidence</dt><dd>Deployment or transfer requires an active recipient</dd><dt>Next action</dt><dd>The assigned support analyst should resolve the stated blocker with the appropriate approver or record owner, then reassess.</dd><dt>Priority</dt><dd>Unassigned: business impact and urgency require review</dd><dt>Follow-up</dt><dd>Agree a follow-up time; no service-level promise is assumed</dd></dl>
+<h3>Customer update draft - not sent</h3><blockquote>Your request is awaiting review. No inventory change has been applied for this request. The next step is to resolve the documented approval or record-state blocker before proceeding.</blockquote>
+<details><summary>Inspect simulated before and after</summary>
+<h3>Before</h3><pre>{
+  &quot;asset_id&quot;: &quot;CI-005&quot;,
+  &quot;type&quot;: &quot;laptop&quot;,
+  &quot;model&quot;: &quot;Synthetic Laptop&quot;,
+  &quot;serial&quot;: &quot;EXAMPLE-ONLY-005&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;assigned_to&quot;: &quot;U-005&quot;,
+  &quot;location&quot;: &quot;Fictional Office A&quot;,
+  &quot;last_updated&quot;: &quot;2026-11-05T15:00:00Z&quot;
+}</pre><h3>After</h3><pre>{
+  &quot;asset_id&quot;: &quot;CI-005&quot;,
+  &quot;type&quot;: &quot;laptop&quot;,
+  &quot;model&quot;: &quot;Synthetic Laptop&quot;,
+  &quot;serial&quot;: &quot;EXAMPLE-ONLY-005&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;assigned_to&quot;: &quot;U-005&quot;,
+  &quot;location&quot;: &quot;Fictional Office A&quot;,
+  &quot;last_updated&quot;: &quot;2026-11-05T15:00:00Z&quot;
+}</pre></details></article>
+<footer><strong>Practice:</strong> predict one held request's missing evidence, then repair a copy of the fixture and regenerate.
+Record your own work in the learner evidence template. Never paste secrets or real personal or patient data into this exercise.</footer>
+</main></body></html>

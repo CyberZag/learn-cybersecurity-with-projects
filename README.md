@@ -17,6 +17,11 @@ These are learning examples, not production detections. Validate field names, th
 
 This new lab is an AI-assisted learning resource. Its published test results were produced by the assistant; they do not establish personal completion or production experience.
 
+## Support handoff practice
+
+- [Support handoff extension](labs/asset-lifecycle/SUPPORT_PORTAL.md): an offline view of the same synthetic cases, with grounded outcomes, safe HTML output and customer-update drafts that are never sent.
+- Six new checks bring the lab suite to 16 passing tests in the assistant's November 9 run. Learner completion is still unclaimed.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
