@@ -25,3 +25,7 @@ For each actual job, read the current description and choose a small relevant su
 5. **Day 5, 45 minutes:** reproduce and retest the local authorization issue; practise a two-minute explanation of scope and limitations.
 
 Dates and completion are intentionally blank. Record what you actually do, including failures and corrections, in the learner evidence template.
+
+## Combined cybersecurity analyst practice
+
+Use the [control-evidence workpapers](CONTROL_WORKPAPERS.md) with the access-review and asset-lifecycle cases for roles combining security operations, identity, inventory and governance. Practise gathering scoped evidence, documenting gaps, writing an unsent request, and retesting without inventing risk scores or audit conclusions. The generated examples are assistant work; record your own reproduction separately.

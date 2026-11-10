@@ -86,3 +86,7 @@ This is a small inventory simulation, not an enterprise CMDB, identity system or
 The idea came from a CleverTailor junior IT operations project suggestion. The assistant wrote and tested this original offline adaptation. No employer systems, paid course assets or completed learner achievements are represented. See [SOURCES.md](SOURCES.md) for background and attribution.
 
 MIT license: see the repository's [LICENSE](../../LICENSE).
+
+## Control-evidence workpapers
+
+The [workpaper exercise](CONTROL_WORKPAPERS.md) extends the evidence checker with three scoped NIST CSF 2.0 examples, explicit evidence requests and manual-testing boundaries. Run `python control_workpaper.py --as-of 2026-11-10`. The assistant's November 10 run passed all 50 tests (43 existing plus seven new); [example workpapers](examples/workpapers/workpapers.md) preserve actual synthetic outputs. Learner reproduction remains unverified.

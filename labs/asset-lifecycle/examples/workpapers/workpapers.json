@@ -1,0 +1,72 @@
+{
+  "synthetic": true,
+  "as_of": "2026-11-10",
+  "provenance": "Assistant-authored and tested; learner reproduction remains unverified.",
+  "framework_source": "https://doi.org/10.6028/NIST.CSWP.29",
+  "mapping_scope": "Three illustrative NIST CSF 2.0 outcomes; not full coverage or a SOC 2 mapping.",
+  "workpapers": [
+    {
+      "reference": "ID.AM-01",
+      "objective": "Maintain a scoped hardware inventory.",
+      "procedure": "Reconcile inventory coverage with the fictional two-device population.",
+      "next_action": "Manually verify completeness and accuracy against an independent population.",
+      "control_id": "LAB-INVENTORY",
+      "gaps": [],
+      "status": "Ready for manual control assessment",
+      "scope": "Two fictional devices",
+      "evidence_reference": "inventory.txt",
+      "owner": "Fictional operations owner",
+      "manual_effectiveness_assessment": "Not performed",
+      "risk_rating": null,
+      "risk_rationale": "Requires impact and likelihood evidence; not inferred from missing documents.",
+      "disposition": "Proceed to manual testing"
+    },
+    {
+      "reference": "PR.AA-05",
+      "objective": "Review permissions against defined least-privilege roles.",
+      "procedure": "Confirm reviewer ownership, population coverage and recorded review evidence.",
+      "next_action": "Request a named reviewer and evidence covering all eight fictional accounts.",
+      "control_id": "LAB-ACCESS",
+      "gaps": [
+        "OWNER_MISSING",
+        "REVIEW_NOT_RECORDED",
+        "SCOPE_MISMATCH"
+      ],
+      "status": "Evidence gaps require review",
+      "scope": "All eight fictional accounts",
+      "evidence_reference": "access.txt",
+      "owner": null,
+      "manual_effectiveness_assessment": "Not performed",
+      "risk_rating": null,
+      "risk_rationale": "Requires impact and likelihood evidence; not inferred from missing documents.",
+      "disposition": "Request evidence"
+    },
+    {
+      "reference": "RC.RP-03",
+      "objective": "Verify integrity of recovery assets before restoration.",
+      "procedure": "Inspect the scoped recovery verification artifact and its manifest.",
+      "next_action": "Request actual fictional restore-verification results; a backup claim alone is insufficient.",
+      "control_id": "LAB-RESTORE",
+      "gaps": [
+        "ARTIFACT_MISSING"
+      ],
+      "status": "Evidence gaps require review",
+      "scope": "Fictional recovery exercise",
+      "evidence_reference": "restore-test.txt",
+      "owner": "Fictional operations owner",
+      "manual_effectiveness_assessment": "Not performed",
+      "risk_rating": null,
+      "risk_rationale": "Requires impact and likelihood evidence; not inferred from missing documents.",
+      "disposition": "Request evidence"
+    }
+  ],
+  "summary": {
+    "total": 3,
+    "evidence_requests": 2,
+    "ready_for_manual_testing": 1
+  },
+  "limitations": [
+    "Manifest consistency does not prove authenticity or control effectiveness.",
+    "No audit opinion, compliance conclusion, risk reduction or remediation completion is asserted."
+  ]
+}
