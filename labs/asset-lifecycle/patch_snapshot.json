@@ -1,0 +1,20 @@
+{
+  "target_update": "DEMO-UPDATE-B",
+  "as_of": "2026-11-10T17:00:00Z",
+  "freshness_hours": 72,
+  "reports": [
+    {"asset_id":"CI-002","update":"DEMO-UPDATE-B","state":"installed","observed_at":"2026-11-10T09:00:00Z"},
+    {"asset_id":"CI-003","update":"DEMO-UPDATE-B","state":"pending","observed_at":"2026-11-10T10:00:00Z"},
+    {"asset_id":"CI-005","update":"DEMO-UPDATE-B","state":"installed","observed_at":"2026-11-05T10:00:00Z"},
+    {"asset_id":"CI-006","update":"DEMO-UPDATE-B","state":"installed","observed_at":"2026-11-10T11:00:00Z"},
+    {"asset_id":"CI-006","update":"DEMO-UPDATE-B","state":"failed","observed_at":"2026-11-10T06:00:00-05:00"},
+    {"asset_id":"CI-007","update":"DEMO-UPDATE-A","state":"installed","observed_at":"2026-11-10T12:00:00Z"},
+    {"asset_id":"CI-008","update":"DEMO-UPDATE-B","state":"pending","observed_at":"2026-11-09T12:00:00Z"},
+    {"asset_id":"CI-008","update":"DEMO-UPDATE-B","state":"installed","observed_at":"2026-11-10T12:00:00Z"},
+    {"asset_id":"CI-009","update":"DEMO-UPDATE-B","state":"installed","observed_at":"2026-11-11T12:00:00Z"},
+    {"asset_id":"CI-010","update":"DEMO-UPDATE-B","state":"failed","observed_at":"2026-11-10T15:00:00Z"},
+    {"asset_id":"CI-011","update":"DEMO-UPDATE-B","state":"installed","observed_at":"2026-11-07T17:00:00Z"},
+    {"asset_id":"CI-001","update":"DEMO-UPDATE-B","state":"installed","observed_at":"2026-11-10T09:00:00Z"},
+    {"asset_id":"CI-999","update":"DEMO-UPDATE-B","state":"installed","observed_at":"2026-11-10T09:00:00Z"}
+  ]
+}

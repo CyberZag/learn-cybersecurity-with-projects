@@ -1,0 +1,120 @@
+{
+  "target_update": "DEMO-UPDATE-B",
+  "as_of": "2026-11-10T17:00:00+00:00",
+  "active_devices": 18,
+  "verified_installed": 3,
+  "by_state": {
+    "conflicting reports": 1,
+    "failed": 1,
+    "installed": 3,
+    "no target evidence": 11,
+    "pending": 1,
+    "stale evidence": 1
+  },
+  "devices": [
+    {
+      "asset_id": "CI-002",
+      "result": "installed",
+      "latest_utc": "2026-11-10T09:00:00+00:00"
+    },
+    {
+      "asset_id": "CI-003",
+      "result": "pending",
+      "latest_utc": "2026-11-10T10:00:00+00:00"
+    },
+    {
+      "asset_id": "CI-005",
+      "result": "stale evidence",
+      "latest_utc": "2026-11-05T10:00:00+00:00"
+    },
+    {
+      "asset_id": "CI-006",
+      "result": "conflicting reports",
+      "latest_utc": "2026-11-10T11:00:00+00:00"
+    },
+    {
+      "asset_id": "CI-007",
+      "result": "no target evidence",
+      "latest_utc": null
+    },
+    {
+      "asset_id": "CI-008",
+      "result": "installed",
+      "latest_utc": "2026-11-10T12:00:00+00:00"
+    },
+    {
+      "asset_id": "CI-009",
+      "result": "no target evidence",
+      "latest_utc": null
+    },
+    {
+      "asset_id": "CI-010",
+      "result": "failed",
+      "latest_utc": "2026-11-10T15:00:00+00:00"
+    },
+    {
+      "asset_id": "CI-011",
+      "result": "installed",
+      "latest_utc": "2026-11-07T17:00:00+00:00"
+    },
+    {
+      "asset_id": "CI-012",
+      "result": "no target evidence",
+      "latest_utc": null
+    },
+    {
+      "asset_id": "CI-013",
+      "result": "no target evidence",
+      "latest_utc": null
+    },
+    {
+      "asset_id": "CI-014",
+      "result": "no target evidence",
+      "latest_utc": null
+    },
+    {
+      "asset_id": "CI-015",
+      "result": "no target evidence",
+      "latest_utc": null
+    },
+    {
+      "asset_id": "CI-016",
+      "result": "no target evidence",
+      "latest_utc": null
+    },
+    {
+      "asset_id": "CI-017",
+      "result": "no target evidence",
+      "latest_utc": null
+    },
+    {
+      "asset_id": "CI-018",
+      "result": "no target evidence",
+      "latest_utc": null
+    },
+    {
+      "asset_id": "CI-019",
+      "result": "no target evidence",
+      "latest_utc": null
+    },
+    {
+      "asset_id": "CI-020",
+      "result": "no target evidence",
+      "latest_utc": null
+    }
+  ],
+  "exceptions": [
+    {
+      "asset_id": "CI-001",
+      "reason": "outside active scope"
+    },
+    {
+      "asset_id": "CI-009",
+      "reason": "timestamp after review cutoff"
+    },
+    {
+      "asset_id": "CI-999",
+      "reason": "unregistered asset"
+    }
+  ]
+}

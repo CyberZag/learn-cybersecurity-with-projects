@@ -90,3 +90,7 @@ MIT license: see the repository's [LICENSE](../../LICENSE).
 ## Control-evidence workpapers
 
 The [workpaper exercise](CONTROL_WORKPAPERS.md) extends the evidence checker with three scoped NIST CSF 2.0 examples, explicit evidence requests and manual-testing boundaries. Run `python control_workpaper.py --as-of 2026-11-10`. The assistant's November 10 run passed all 50 tests (43 existing plus seven new); [example workpapers](examples/workpapers/workpapers.md) preserve actual synthetic outputs. Learner reproduction remains unverified.
+
+## Verify update coverage
+
+The [patch coverage exercise](PATCH_COVERAGE.md) reconciles update observations with this lab’s active inventory. Trace missing devices, stale check-ins and conflicting records, then write a follow-up for each exception.

@@ -29,3 +29,5 @@ Dates and completion are intentionally blank. Record what you actually do, inclu
 ## Combined cybersecurity analyst practice
 
 Use the [control-evidence workpapers](CONTROL_WORKPAPERS.md) with the access-review and asset-lifecycle cases for roles combining security operations, identity, inventory and governance. Practise gathering scoped evidence, documenting gaps, writing an unsent request, and retesting without inventing risk scores or audit conclusions. The generated examples are assistant work; record your own reproduction separately.
+
+For network monitoring, endpoint maintenance and security operations roles, use the [patch coverage exercise](PATCH_COVERAGE.md). Explain which devices have current evidence, which need attention, and how the inventory determines the denominator.
