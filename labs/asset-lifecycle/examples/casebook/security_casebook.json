@@ -1,0 +1,103 @@
+{
+  "synthetic": true,
+  "as_of": "2026-11-09",
+  "provenance": "Assistant-authored and tested; not personal learner completion.",
+  "network": [
+    {
+      "flow": {
+        "source": "192.0.2.10",
+        "destination": "198.51.100.10",
+        "protocol": "tcp",
+        "destination_port": 443
+      },
+      "decision": "deny",
+      "matched_rule": "DENY-RESTRICTED"
+    },
+    {
+      "flow": {
+        "source": "192.0.2.10",
+        "destination": "198.51.100.200",
+        "protocol": "tcp",
+        "destination_port": 443
+      },
+      "decision": "allow",
+      "matched_rule": "ALLOW-WEB"
+    },
+    {
+      "flow": {
+        "source": "192.0.2.10",
+        "destination": "203.0.113.53",
+        "protocol": "udp",
+        "destination_port": 53
+      },
+      "decision": "allow",
+      "matched_rule": "ALLOW-DNS"
+    },
+    {
+      "flow": {
+        "source": "192.0.2.10",
+        "destination": "198.51.100.200",
+        "protocol": "tcp",
+        "destination_port": 22
+      },
+      "decision": "deny",
+      "matched_rule": null
+    }
+  ],
+  "governance": [
+    {
+      "control_id": "LAB-ACCESS-REVIEW",
+      "gaps": [],
+      "status": "Ready for manual control assessment"
+    },
+    {
+      "control_id": "LAB-MISSING-EVIDENCE",
+      "gaps": [
+        "OWNER_MISSING",
+        "REVIEW_NOT_RECORDED",
+        "ARTIFACT_MISSING"
+      ],
+      "status": "Evidence gaps require review"
+    },
+    {
+      "control_id": "LAB-OLD-SCOPE",
+      "gaps": [
+        "SCOPE_MISMATCH",
+        "STALE_UNDER_LAB_CRITERION"
+      ],
+      "status": "Evidence gaps require review"
+    }
+  ],
+  "authorization": [
+    {
+      "principal": "U-001",
+      "record_id": "EXAMPLE-R1",
+      "vulnerable_status": 200,
+      "corrected_status": 200
+    },
+    {
+      "principal": "U-001",
+      "record_id": "EXAMPLE-R2",
+      "vulnerable_status": 200,
+      "corrected_status": 404
+    },
+    {
+      "principal": "U-010",
+      "record_id": "EXAMPLE-R2",
+      "vulnerable_status": 200,
+      "corrected_status": 200
+    },
+    {
+      "principal": "UNKNOWN",
+      "record_id": "EXAMPLE-R1",
+      "vulnerable_status": 401,
+      "corrected_status": 401
+    }
+  ],
+  "limitations": [
+    "No live network, firewall, application or third-party system is tested.",
+    "Network model excludes state tracking, NAT, routing, IPv6 and established sessions.",
+    "Evidence readiness is not control effectiveness, audit assurance or regulatory compliance.",
+    "Authorization exercise assumes authenticated principals and trusted role data; not a complete secure application."
+  ]
+}

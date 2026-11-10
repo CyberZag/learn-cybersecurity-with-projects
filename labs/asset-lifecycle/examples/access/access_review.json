@@ -1,0 +1,169 @@
+{
+  "synthetic": true,
+  "as_of": "2026-11-09",
+  "provenance": "Assistant-authored and tested; not personal learner completion.",
+  "scope": {
+    "accounts_reviewed": 8,
+    "inventory_users": 20,
+    "coverage": "Only listed accounts and explicit fixture rules; not complete identity coverage."
+  },
+  "limitations": [
+    "No directory connection or change. Disabled accounts may retain assignments.",
+    "Effective access, group nesting, session tokens, exception authenticity and policy completeness are not verified.",
+    "No finding is not approval or proof of compliance. All decisions require human review."
+  ],
+  "finding_counts": {
+    "EXPIRED_EXCEPTION": 1,
+    "LEAVER_ACCESS_REVIEW": 1,
+    "ROLE_DEVIATION_REVIEW": 2,
+    "SEPARATION_OF_DUTIES_REVIEW": 1,
+    "UNKNOWN_PERMISSION": 1,
+    "UNKNOWN_ROLE": 1,
+    "UNKNOWN_SUBJECT": 1
+  },
+  "accounts": [
+    {
+      "account_id": "EXAMPLE-A01",
+      "user_id": "U-001",
+      "role": "clerk",
+      "enabled": true,
+      "status": "Review required",
+      "findings": [
+        {
+          "code": "SEPARATION_OF_DUTIES_REVIEW",
+          "evidence": [
+            "invoice.approve",
+            "invoice.create"
+          ],
+          "next_action": "Review the conflicting assignment and any compensating control; do not auto-revoke."
+        },
+        {
+          "code": "ROLE_DEVIATION_REVIEW",
+          "evidence": [
+            "invoice.approve"
+          ],
+          "next_action": "Validate business need and role ownership; record a reviewed decision before changing access."
+        }
+      ],
+      "recorded_exceptions": []
+    },
+    {
+      "account_id": "EXAMPLE-A02",
+      "user_id": "U-002",
+      "role": "reviewer",
+      "enabled": true,
+      "status": "No finding under these limited checks",
+      "findings": [],
+      "recorded_exceptions": []
+    },
+    {
+      "account_id": "EXAMPLE-A03",
+      "user_id": "U-003",
+      "role": "clerk",
+      "enabled": true,
+      "status": "Review required",
+      "findings": [
+        {
+          "code": "LEAVER_ACCESS_REVIEW",
+          "evidence": {
+            "enabled": true,
+            "assigned_permissions": [
+              "invoice.read"
+            ]
+          },
+          "next_action": "Verify departure and actual effective access; coordinate approved deprovisioning and collect evidence."
+        }
+      ],
+      "recorded_exceptions": []
+    },
+    {
+      "account_id": "EXAMPLE-A04",
+      "user_id": "U-004",
+      "role": "unmapped-role",
+      "enabled": true,
+      "status": "Review required",
+      "findings": [
+        {
+          "code": "UNKNOWN_ROLE",
+          "evidence": "unmapped-role",
+          "next_action": "Have the role owner validate the mapping before deciding which access is excessive."
+        }
+      ],
+      "recorded_exceptions": []
+    },
+    {
+      "account_id": "EXAMPLE-A05",
+      "user_id": "U-005",
+      "role": "clerk",
+      "enabled": true,
+      "status": "Review required",
+      "findings": [
+        {
+          "code": "UNKNOWN_PERMISSION",
+          "evidence": [
+            "legacy.unknown"
+          ],
+          "next_action": "Resolve permission definitions with the application owner."
+        }
+      ],
+      "recorded_exceptions": []
+    },
+    {
+      "account_id": "EXAMPLE-A06",
+      "user_id": "U-006",
+      "role": "clerk",
+      "enabled": true,
+      "status": "No finding under these limited checks",
+      "findings": [],
+      "recorded_exceptions": [
+        {
+          "permission": "invoice.export",
+          "reviewer_id": "U-010",
+          "expires_on": "2026-11-30",
+          "evidence": "Fictional EXCEPTION-06: temporary reporting duty",
+          "status": "Fictional exception recorded; authenticity not verified"
+        }
+      ]
+    },
+    {
+      "account_id": "EXAMPLE-A07",
+      "user_id": "U-007",
+      "role": "clerk",
+      "enabled": true,
+      "status": "Review required",
+      "findings": [
+        {
+          "code": "EXPIRED_EXCEPTION",
+          "evidence": {
+            "permission": "invoice.export",
+            "expires_on": "2026-11-08"
+          },
+          "next_action": "Reassess the business need; an expired exception does not explain current access."
+        },
+        {
+          "code": "ROLE_DEVIATION_REVIEW",
+          "evidence": [
+            "invoice.export"
+          ],
+          "next_action": "Validate business need and role ownership; record a reviewed decision before changing access."
+        }
+      ],
+      "recorded_exceptions": []
+    },
+    {
+      "account_id": "EXAMPLE-A08",
+      "user_id": "U-999",
+      "role": "clerk",
+      "enabled": false,
+      "status": "Review required",
+      "findings": [
+        {
+          "code": "UNKNOWN_SUBJECT",
+          "evidence": "U-999",
+          "next_action": "Reconcile identity with the authoritative personnel record; do not infer employment status."
+        }
+      ],
+      "recorded_exceptions": []
+    }
+  ]
+}

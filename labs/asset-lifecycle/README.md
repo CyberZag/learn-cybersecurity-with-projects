@@ -67,6 +67,18 @@ python support_portal.py
 
 Open the generated `support_runs/.../index.html` locally. Six new tests plus the ten existing tests passed in the assistant's November 9 run. See [support verification notes](examples/support/VERIFICATION.md). Browser visual preview was blocked by the tool's local-file URL policy; the HTML structure and escaping were checked automatically, but no visual-review claim is made.
 
+## IAM, network, GRC and application-security practice
+
+The [role practice map](ROLE_PATHS.md) connects each target role to relevant exercises. The [IAM access review](ACCESS_REVIEW.md) reuses the fictional user inventory and reviews role deviations, conflicts, leavers and expiring exceptions. The [security casebook](SECURITY_CASEBOOK.md) adds an ordered network-rule model, evidence-readiness checks and a local object-authorization reproduction with a corrected implementation.
+
+```sh
+python access_review.py --as-of 2026-11-09
+python security_casebook.py --as-of 2026-11-09
+python -m unittest -v
+```
+
+The full suite passed 43 tests in the assistant's November 9 Toronto run: 16 existing, 14 IAM and 13 casebook tests. [Verification evidence](examples/SECURITY_EXTENSION_VERIFICATION.md) distinguishes assistant results from your own practice. These are offline simulations, not real directory, firewall, audit or penetration-testing work.
+
 ## Limits and provenance
 
 This is a small inventory simulation, not an enterprise CMDB, identity system or BMC/Intune integration. Approval strings are fictional inputs, not authenticated approval. The JSON audit is editable. The event timestamp is fixed for the scenario; the output folder records the actual run time. No device is wiped and no access is revoked.

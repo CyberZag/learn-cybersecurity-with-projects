@@ -1,0 +1,17 @@
+{
+  "synthetic": true,
+  "description": "Fictional IAM review of subjects from the existing asset lab; no employer data",
+  "permissions": ["invoice.read", "invoice.create", "invoice.approve", "invoice.export"],
+  "roles": {"clerk": ["invoice.read", "invoice.create"], "reviewer": ["invoice.read", "invoice.approve"]},
+  "conflicts": [["invoice.create", "invoice.approve"]],
+  "accounts": [
+    {"account_id": "EXAMPLE-A01", "user_id": "U-001", "role": "clerk", "enabled": true, "permissions": ["invoice.read", "invoice.create", "invoice.approve"]},
+    {"account_id": "EXAMPLE-A02", "user_id": "U-002", "role": "reviewer", "enabled": true, "permissions": ["invoice.read", "invoice.approve"]},
+    {"account_id": "EXAMPLE-A03", "user_id": "U-003", "role": "clerk", "enabled": true, "permissions": ["invoice.read"]},
+    {"account_id": "EXAMPLE-A04", "user_id": "U-004", "role": "unmapped-role", "enabled": true, "permissions": ["invoice.read"]},
+    {"account_id": "EXAMPLE-A05", "user_id": "U-005", "role": "clerk", "enabled": true, "permissions": ["invoice.read", "legacy.unknown"]},
+    {"account_id": "EXAMPLE-A06", "user_id": "U-006", "role": "clerk", "enabled": true, "permissions": ["invoice.read", "invoice.export"], "exceptions": [{"permission": "invoice.export", "reviewer_id": "U-010", "expires_on": "2026-11-30", "evidence": "Fictional EXCEPTION-06: temporary reporting duty"}]},
+    {"account_id": "EXAMPLE-A07", "user_id": "U-007", "role": "clerk", "enabled": true, "permissions": ["invoice.read", "invoice.export"], "exceptions": [{"permission": "invoice.export", "reviewer_id": "U-010", "expires_on": "2026-11-08", "evidence": "Fictional EXCEPTION-07: expired reporting duty"}]},
+    {"account_id": "EXAMPLE-A08", "user_id": "U-999", "role": "clerk", "enabled": false, "permissions": []}
+  ]
+}

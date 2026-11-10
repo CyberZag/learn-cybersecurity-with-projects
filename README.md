@@ -1,6 +1,6 @@
 # Learn Cybersecurity with Projects
 
-A small collection of original, defensive learning artifacts: a Python log parser and two detection-rule examples.
+Original defensive learning artifacts and offline security exercises, with synthetic inputs, reproducible tests and clearly attributed example results.
 
 ## Published content
 
@@ -21,6 +21,10 @@ This new lab is an AI-assisted learning resource. Its published test results wer
 
 - [Support handoff extension](labs/asset-lifecycle/SUPPORT_PORTAL.md): an offline view of the same synthetic cases, with grounded outcomes, safe HTML output and customer-update drafts that are never sent.
 - Six new checks bring the lab suite to 16 passing tests in the assistant's November 9 run. Learner completion is still unclaimed.
+
+## IAM, network, GRC and application-security practice
+
+Follow the [role practice paths](labs/asset-lifecycle/ROLE_PATHS.md) for identity access reviews, network-policy reasoning, control-evidence readiness and a local authorization-flaw reproduction with remediation tests. The existing lab suite now passes 43 tests in the assistant's November 9 run. Personal learner completion remains unclaimed.
 
 ## License
 
